@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rebeca Azevedo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header_logo">
+            <img class="img_logo" src="assets/Rebeca pereira de azevedo.png" alt="logo">
+        </div>
+        <div class="header_menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav class="header_nav">
+            <div class="header_content">
+                <a href="#home">HOME</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="https://www.linkedin.com/in/rebeca-azevedo" target="_blank">
+                    <img class="img_icon" src="assets/logotipo-do-linkedin (2).png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/RebecaAzvdd" target="_blank">
+                    <img class="img_icon" src="assets/github (1).png" alt="GitHub">
+                </a>
+            </div>
+        </nav>
+    </div>
+    <div class="hero" id="home">
+        <div class="hero_content">
+            <div class="hero_title">
+                <p>DESENVOLVEDORA<br>FULL-STACK</p>
+            </div>
+            <div class="hero_description">
+                <p>Olá! Sou Rebeca, desenvolvedora Full Stack<br> apaixonada por criar soluções digitais incríveis.<br> Com expertise em Java, HTML, CSS, Angular, MySQL e JavaScript,<br> transformo ideias em aplicações robustas e intuitivas.<br> Vamos conversar sobre como posso ajudar a dar vida<br> ao seu próximo projeto?</p>
+            </div>
+        </div>
+        <div class="hero_img">
+            <img class="img" src="assets/3d-rendering-kid-playing-digital-game.jpg" alt="desenvolvedora">
+        </div>
+    </div>
+    <div class="section">
+        <div class="section_content">
+            <div class="section_img">
+                <img class="language_img" src="assets/html (1).png" alt="html5">
+                <img class="language_img" src="assets/css-3 (1).png" alt="css3">
+                <img class="language_img" src="assets/java-logo.png" alt="java">
+                <img class="language_img" src="assets/angular.png" alt="angular">
+                <img class="language_img" src="assets/java-script.png" alt="javascript">
+                <img class="language_img" src="assets/typescript.png" alt="typescript">
+                <img class="language_img" src="assets/mysql.png" alt="mysql">
+            </div>
+        </div>
+    </div>
+    <div class="container" id="projects">
+        <div class="container_title">
+            <p>PROJECTS</p>
+        </div>
+        <div class="container_box">
+            <div class="box_img">
+                <a href="https://github.com/RebecaAzvdd/Hotel" target="_blank">
+                    <img src="assets/hotel.jpeg" alt="Hotel">
+                </a>
+            </div>
+            <div class="icon_link">
+                <a href="https://github.com/RebecaAzvdd/Hotel" target="_blank">
+                    <img src="assets/link.png" alt="Icon">
+                </a>
+            </div>
+            <div class="tag">
+                <p>BOOTSTRAP</p>
+            </div>
+        </div>
+        <div class="container_box">
+            <div class="box_img">
+                <a href="https://github.com/RebecaAzvdd/Planner-Digital" target="_blank">
+                    <img src="assets/javaPlanner.png" alt="Java Planner">
+                </a>
+            </div>
+            <div class="icon_link">
+                <a href="https://github.com/RebecaAzvdd/Planner-Digital" target="_blank">
+                    <img src="assets/link.png" alt="Icon">
+                </a>
+            </div>
+            <div class="tag">
+                <p>JAVA</p>
+            </div>
+        </div>
+        <div class="container_box">
+            <div class="box_img">
+                <a href="https://github.com/RebecaAzvdd/Financeira-Pura" target="_blank">
+                    <img src="assets/novaCred.jpeg" alt="Financeira Pura">
+                </a>
+            </div>
+            <div class="icon_link">
+                <a href="https://github.com/RebecaAzvdd/Financeira-Pura" target="_blank">
+                    <img src="assets/link.png" alt="Icon">
+                </a>
+            </div>
+            <div class="tag">
+                <p>CSS</p>
+            </div>
+        </div>
+        <div class="container_box">
+            <div class="box_img">
+                <a href="https://github.com/RebecaAzvdd/Payment" target="_blank">
+                    <img src="assets/compras.png" alt="Payment">
+                </a>
+            </div>
+            <div class="icon_link">
+                <a href="https://github.com/RebecaAzvdd/Payment" target="_blank">
+                    <img src="assets/link.png" alt="Icon">
+                </a>
+            </div>
+            <div class="tag">
+                <p>JAVASCRIPT</p>
+            </div>
+        </div>
+        <div class="container_box">
+            <div class="box_img">
+                <a href="https://github.com/RebecaAzvdd/BMI-Calculator" target="_blank">
+                    <img src="assets/jsBMI.png" alt="BMI Calculator">
+                </a>
+            </div>
+            <div class="icon_link">
+                <a href="https://github.com/RebecaAzvdd/BMI-Calculator" target="_blank">
+                    <img src="assets/link.png" alt="Icon">
+                </a>
+            </div>
+            <div class="tag">
+                <p>JAVASCRIPT</p>
+            </div>
+        </div>
+    </div>
+    <script>
+           document.addEventListener('DOMContentLoaded', function() {
+        const menuButton = document.querySelector('.header_menu');
+        const navMenu = document.querySelector('.header_nav');
+
+        if (menuButton && navMenu) {
+            menuButton.addEventListener('click', function() {
+                const isActive = navMenu.classList.contains('active');
+               
+                navMenu.classList.toggle('active');
+
+               
+            });
+        }
+    });
+    </script>    
+</body>
+</html>
